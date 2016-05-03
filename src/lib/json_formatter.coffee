@@ -38,6 +38,9 @@ class JSONFormatter
   undefinedToHTML: () ->
     @decorateWithSpan('undefined', 'undefined')
 
+  functionToHTML: (value) ->
+    @decorateWithSpan('function', 'function')
+
   numberToHTML: (value) ->
     @decorateWithSpan(value, 'num')
 
